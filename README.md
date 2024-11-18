@@ -78,16 +78,22 @@ for Mac OS or linux
         POST
 #### **Authentication**: 
         Requires a static token (configured in the settings.py file).
-#### **Payload:** 
+#### **Payload**: 
       {
         "page_limit": 5,
         "proxy": "http://<proxy_url>"
       }
-#### **Response:**
+#### **Response**:
       {
         "status": "success",
         "products_scraped": 20
       }
+#### **curl**:
+      curl -X POST http://127.0.0.1:8000/scrape/ \
+         -H "Content-Type: application/json" \
+         -H "Authorization: Bearer 1234" \
+         -d '{"max_pages": 6}'
+
 ---
 
 ## **Customizing the Project**
