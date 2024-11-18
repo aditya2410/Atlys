@@ -1,6 +1,6 @@
 # **Web Scraper with FastAPI**
 
-This project is a web scraping tool built using the **FastAPI** framework. It automates the process of extracting product details (name, price, image, and discounts) from a specified e-commerce website and supports flexible configurations such as page limits and proxy usage.
+This project is a web scraping tool built using the **FastAPI** framework. It automates the process of extracting product details (name, price, and image) from [DentalHall](https://dentalstall.com/shop/) and supports flexible configurations such as page limits and proxy usage.
 
 ---
 
