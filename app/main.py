@@ -12,8 +12,8 @@ app = FastAPI()
 
 settings = Settings()
 # Configure cache and storage
-cache = Cache(redis_url="redis://localhost")
-storage = JSONStorage(file_path="scraped_data.json")
+cache = Cache(redis_url=settings.redis_url)
+storage = JSONStorage(file_path=settings.json_path)
 
 notifiers = [
     ConsoleNotifier(),

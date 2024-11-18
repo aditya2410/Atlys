@@ -44,10 +44,9 @@ class Scraper:
                             image_element = product.find('div', class_="mf-product-thumbnail").find('a').find('img')
                             product_image_url = image_element.get('data-lazy-src')
                         except AttributeError:
-                            print(product)
+                            continue
 
                         if self.cache.is_cached(product_name, product_price):
-                            print("cached")
                             continue
 
                         # Download image
